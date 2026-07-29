@@ -1,0 +1,35 @@
+/*Hide Loading Widget*/
+function loadingWidget(timeout=1250,widget="loadingWidget"){
+    setTimeout(function () {
+        $('#' + widget).hide();
+    }, timeout);	 	
+}
+
+/*
+//FAQ Website - Append to FS Admin
+$( document ).ready(function() {
+    var appNav = $('#fsFlyoutNavSupport').html();
+    if(appNav){
+        $("#fsFlyoutNavSupport ul").prepend('<li><a href="https://faq.fairfieldschools.org/finalsite/" target="_blank" aria-label="Frequently Asked Questions">Frequently Asked Questions</a></li>');
+    }
+});
+*/
+
+/*
+//Constituent Manager TARGET BLANK function
+$( document ).ready(function() {
+    if($('#fsEl_15179').length){//fwms
+        cmTargetBlank();
+    }
+    
+    function cmTargetBlank(){
+        try{
+            if(top.location != location){
+                $(".fsPersonalURL a[href^='http'], .fsPersonalURL a[href^='www']")
+                    .not("[href*='"+location.host+"']")
+                    .attr('target','_blank');}
+            }
+        catch(err){}
+    }
+});
+*/
